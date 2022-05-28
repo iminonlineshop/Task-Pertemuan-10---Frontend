@@ -20,17 +20,17 @@ const Button = styled.button`
     `}
 
 // Props size
-    ${(props) => props.sm && css`
+    ${(props) => props.size == sm && css`
         font-size: 0.8rem;
         padding: 0.2rem 0.5rem;
     `}
 
-    ${(props) => props.md && css`
+    ${(props) => props.size == md && css`
         font-size: 1rem;
         padding: 0.5rem 1rem;
     `}
 
-    ${(props) => props.lg && css`
+    ${(props) => props.size == lg && css`
         font-size: 1.3rem;
         padding: 0.5rem 1rem;
     `}
